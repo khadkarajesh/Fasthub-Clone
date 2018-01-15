@@ -37,6 +37,7 @@ android {
 ext {
     architectureComponents = '1.0.0'
     appCompat = '26.1.0'
+    dagger = '2.14.1'
 }
 
 dependencies {
@@ -55,15 +56,10 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:$architectureComponents"
     implementation "android.arch.lifecycle:common-java8:$architectureComponents"
 
-    //dagger 2
-//    compile "com.google.dagger:dagger:2.14.1"
-//    annotationProcessor "com.google.dagger:dagger-compiler:2.14.1"
-//    annotationProcessor "com.google.dagger:dagger-android-processor:2.14.1"
-//    compile "com.google.dagger:dagger-android-support:2.14.1"
-
-    compile "com.google.dagger:dagger:2.14.1"
-    compile 'com.google.dagger:dagger-android:2.14.1'
-    compile 'com.google.dagger:dagger-android-support:2.14.1'
-    kapt 'com.google.dagger:dagger-compiler:2.14.1'
-    kapt 'com.google.dagger:dagger-android-processor:2.14.1'
+    //dagger
+    implementation "com.google.dagger:dagger:2.14.1"
+    implementation "com.google.dagger:dagger-android:2.14.1"
+    implementation "com.google.dagger:dagger-android-support:2.14.1"
+    kapt "com.google.dagger:dagger-compiler:2.14.1"
+    kapt "com.google.dagger:dagger-android-processor:2.14.1"
 }
