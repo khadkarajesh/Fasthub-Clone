@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FastHub</string>
+    <string name="msg_sign_in_using_github">Sign in using your Github account to \n use FastHub</string>
+</resources>
