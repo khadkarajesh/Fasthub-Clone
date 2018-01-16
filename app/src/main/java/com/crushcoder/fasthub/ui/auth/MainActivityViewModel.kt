@@ -24,7 +24,8 @@ class MainActivityViewModel @Inject constructor(val service: LoginService) : Vie
 
     fun login() {
         //var authHeader = "Basic "+encode("rajeshkumarkhadka:R@jesh1234")
-        var authHeader = "Basic cmFqZXNoa3VtYXJraGFka2E6UkBqZXNoMTIzNA=="
+        var encodedValue = "cmFqZXNoa3VtYXJraGFka2E6UkBqZXNoMTIzNA=="
+        var authHeader = "Basic  $encodedValue"
         service.login(authHeader)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

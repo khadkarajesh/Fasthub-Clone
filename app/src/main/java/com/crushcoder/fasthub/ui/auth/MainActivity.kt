@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.crushcoder.fasthub.R
 import com.crushcoder.fasthub.base.BaseActivity
 import com.crushcoder.fasthub.ui.login.LoginActivity
+import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
 class MainActivity : BaseActivity() {
@@ -16,8 +17,9 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val intent = Intent(this, LoginActivity::class.java)
-        startActivity(intent)
-        //viewModel.login()
+        main_tv_login.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
