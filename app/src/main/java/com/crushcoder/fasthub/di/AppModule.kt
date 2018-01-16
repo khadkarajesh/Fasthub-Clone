@@ -1,4 +1,4 @@
-package com.crushcoder.fasthub.injection
+package com.crushcoder.fasthub.di
 
 import android.app.Application
 import android.content.Context
