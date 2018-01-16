@@ -1,8 +1,10 @@
 package com.crushcoder.fasthub.ui.auth
 
+import android.content.Intent
 import android.os.Bundle
 import com.crushcoder.fasthub.R
 import com.crushcoder.fasthub.base.BaseActivity
+import com.crushcoder.fasthub.ui.login.LoginActivity
 import javax.inject.Inject
 
 class MainActivity : BaseActivity() {
@@ -14,6 +16,8 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel.login()
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        //viewModel.login()
     }
 }

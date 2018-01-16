@@ -13,6 +13,7 @@ import javax.inject.Singleton
 
 @Module
 class NetworkModule {
+
     @Provides
     @Singleton
     fun provideRetrofit(okHttpClient: OkHttpClient): LoginService {
