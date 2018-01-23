@@ -9,7 +9,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
 class MainActivity : BaseActivity() {
-    @Inject lateinit var viewModel: MainActivityViewModel
+    @Inject
+    lateinit var viewModel: MainActivityViewModel
 
     override fun getLayout(): Int {
         return R.layout.activity_main
