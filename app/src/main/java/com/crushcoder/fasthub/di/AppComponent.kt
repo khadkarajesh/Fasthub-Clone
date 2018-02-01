@@ -12,6 +12,7 @@ import javax.inject.Singleton
 arrayOf(AppModule::class,
         AndroidSupportInjectionModule::class,
         ActivityBuildersModule::class,
+        ViewModelModule::class,
         NetworkModule::class))
 interface AppComponent : AndroidInjector<FastHubApplication> {
     @Component.Builder
