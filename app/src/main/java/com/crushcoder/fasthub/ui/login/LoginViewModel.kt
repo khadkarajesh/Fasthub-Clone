@@ -8,13 +8,13 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.subjects.PublishSubject
 import javax.inject.Inject
 
-class LoginViewModel @Inject constructor(service: LoginService) : BaseViewModel() {
-    val loginService = service
+class LoginViewModel : BaseViewModel() {
+    @Inject lateinit var service: LoginService
     lateinit var data: PublishSubject<State>
 
     fun login() {
         var authHeader = "Basic".concat(" cmFqZXNoa3VtYXJraGFka2E6UkBqZXNoMTIzNA==")
-        loginService.login(authHeader).subscribe(object : SingleObserver<User> {
+        service.login(authHeader).subscribe(object : SingleObserver<User> {
             override fun onSubscribe(d: Disposable) {
             }
 

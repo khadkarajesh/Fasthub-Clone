@@ -12,7 +12,8 @@ import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
 
-class MainActivityViewModel @Inject constructor(val service: LoginService) : ViewModel() {
+class MainActivityViewModel  : ViewModel() {
+    @Inject lateinit var  service: LoginService
 
     fun getUserDetails(): String {
         return "hello world"

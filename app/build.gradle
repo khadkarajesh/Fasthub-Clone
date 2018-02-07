@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     defaultConfig {
         applicationId "com.crushcoder.fasthub"
         minSdkVersion 21
@@ -33,7 +33,7 @@ android {
 
 ext {
     architectureComponents = '1.0.0'
-    appCompat = '26.1.0'
+    appCompat = '27.0.0'
     dagger = '2.14.1'
     retrofit = '2.3.0'
 }
@@ -72,7 +72,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
     implementation "com.squareup.okhttp3:logging-interceptor:3.9.1"
     implementation 'com.squareup.okhttp3:okhttp:3.9.1'
-    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:design:27.0.0'
     implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
 
     //image library
