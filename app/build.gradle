@@ -78,4 +78,8 @@ dependencies {
     //image library
     implementation 'com.github.bumptech.glide:glide:4.5.0'
     kapt 'com.github.bumptech.glide:compiler:4.5.0'
+
+    //appium android testing
+    testCompile 'org.seleniumhq.selenium:selenium-java:2.48.2'
+    testCompile 'io.appium:java-client:6.0.0-BETA3'
 }
