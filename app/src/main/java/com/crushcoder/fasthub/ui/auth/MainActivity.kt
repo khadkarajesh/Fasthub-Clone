@@ -3,7 +3,7 @@ package com.crushcoder.fasthub.ui.auth
 import android.content.Intent
 import android.os.Bundle
 import com.crushcoder.fasthub.R
-import com.crushcoder.fasthub.base.BaseViewModelActivity
+import com.crushcoder.fasthub.ui.base.BaseViewModelActivity
 import com.crushcoder.fasthub.databinding.ActivityMainBinding
 import com.crushcoder.fasthub.ui.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_main.*

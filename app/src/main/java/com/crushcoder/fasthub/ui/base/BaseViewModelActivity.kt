@@ -1,4 +1,4 @@
-package com.crushcoder.fasthub.base
+package com.crushcoder.fasthub.ui.base
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProviders
